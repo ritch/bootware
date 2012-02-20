@@ -1,16 +1,16 @@
 {
   "author": "Ritchie Martori",
   "name": "bootware",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "repository": {
-    "url": ""
+    "type": "git",
+    "url": "git@github.com:ritch/bootware.git"
   },
   "engines": {
-    "node": ">= 0.6.x"
+    "node": ">= 0.6.0"
   },
-  "main":"index",
-  "dependencies": {
-    
-  },
-  "devDependencies": {}
+  "main": "index",
+  "dependencies": {"connect": ">= 1.8.0"},
+  "devDependencies": {},
+  "description": "Drop Bootstrap builds into your Node.js app. Just provide a git:// url and you're all set."
 }

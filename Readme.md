@@ -19,11 +19,16 @@ By default **bootware** will `git pull` the master [Bootstrap](http://twitter.gi
       .listen(3000)
     ;
 
-You can then reference a built version of Bootstrap like so:
+This provides a newly built version of bootstrap at `/bootstrap`.
+
+Reference a built version of Bootstrap like so:
 
     <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    
+and the javascript:
 
+    <script src="/bootstrap/js/bootstrap.js"></script>
+    
 ### Local Development
 
 If you are building your own fork or version of bootstrap you can point **bootware** at its local path.
@@ -38,7 +43,9 @@ If you are building your own fork or version of bootstrap you can point **bootwa
     ;
 
 If a local path is provided **bootware** will use `cp` instead of `git` to pull in the built version of bootstrap.
-This makes it very easy to customize bootstrap in another directory while developing without having to commit files every time they change.
+Setting the debug flag will rebuild boostrap every request.
+
+    bootware({path: '~/Projects/my-bootstrap', debug: true}) // should never be used in production
 
 ## Best Practices
 
