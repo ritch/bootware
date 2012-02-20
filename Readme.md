@@ -4,8 +4,6 @@ Drop [Bootstrap](http://twitter.github.com/bootstrap/) builds into your Node.js 
 
 ## Examples
 
-### Express
-
 By default **bootware** will `git pull` the master [Bootstrap](http://twitter.github.com/bootstrap/) repo into `/tmp/<unique tag>`.
 
     var express = require('express')
