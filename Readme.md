@@ -2,6 +2,10 @@
 
 Drop [Bootstrap](http://twitter.github.com/bootstrap/) builds into your Node.js app. Just provide a `git://` url and you're all set.
 
+## Installation
+
+    npm install bootware
+
 ## Examples
 
 By default **bootware** will `git pull` the master [Bootstrap](http://twitter.github.com/bootstrap/) repo into `/tmp/<unique tag>`.
@@ -15,7 +19,7 @@ By default **bootware** will `git pull` the master [Bootstrap](http://twitter.gi
       .listen(3000)
     ;
 
-You can then reference a built version of Bootstrap in like so:
+You can then reference a built version of Bootstrap like so:
 
     <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
