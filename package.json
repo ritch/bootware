@@ -1,6 +1,6 @@
 {
-  "author": "",
-  "name": "my_module",
+  "author": "Ritchie Martori",
+  "name": "bootware",
   "version": "0.0.0",
   "repository": {
     "url": ""
@@ -9,6 +9,8 @@
     "node": ">= 0.6.x"
   },
   "main":"index",
-  "dependencies": {},
+  "dependencies": {
+    
+  },
   "devDependencies": {}
 }

@@ -12,7 +12,7 @@ var app = module.exports = express.createServer();
 // Configuration
 
 app.configure(function(){
-  app.use(bootware({path: '~/Projects/dpd-css'}));
+  app.use(bootware({path: 'git://github.com/deployd/bootstrap.git', debug: true}));
   app.use(express.static(__dirname + '/public'));
 });
 
